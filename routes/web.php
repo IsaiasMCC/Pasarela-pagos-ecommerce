@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    redirect('/productos');
 });
 Route::get('/payments/{id}', [PaymentController::class, 'showPaymentForm'])->name('payment.form');
 
